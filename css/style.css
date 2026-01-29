@@ -205,20 +205,46 @@ main {
 /* --- Skills table --- */
 .skills-table-wrap {
   overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
 }
 
 .skills-table {
+  display: table;
   width: 100%;
+  min-width: 480px;
   border-collapse: collapse;
   font-size: 0.95rem;
+  table-layout: fixed;
+}
+
+.skills-table thead {
+  display: table-header-group;
+}
+
+.skills-table tbody {
+  display: table-row-group;
+}
+
+.skills-table tr {
+  display: table-row;
 }
 
 .skills-table th,
 .skills-table td {
+  display: table-cell;
   padding: var(--space-md) var(--space-lg);
   text-align: left;
   border: 1px solid var(--color-border);
   vertical-align: top;
+}
+
+.skills-table .col-category {
+  width: 32%;
+}
+
+.skills-table .col-tools {
+  width: 68%;
 }
 
 .skills-table thead th {
@@ -231,10 +257,18 @@ main {
   letter-spacing: 0.05em;
 }
 
+.skills-table tbody tr {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.skills-table tbody tr:last-child {
+  border-bottom: none;
+}
+
 .skills-table tbody td:first-child {
   color: var(--color-text);
   font-weight: 500;
-  white-space: nowrap;
+  background: var(--color-surface);
 }
 
 .skills-table tbody td:last-child {
