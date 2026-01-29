@@ -202,34 +202,43 @@ main {
   line-height: 1.65;
 }
 
-/* --- Skills grid --- */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: var(--space-lg);
+/* --- Skills table --- */
+.skills-table-wrap {
+  overflow-x: auto;
 }
 
-.skills__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.skills__list li {
-  position: relative;
-  padding-left: var(--space-lg);
-  margin-bottom: var(--space-sm);
-  color: var(--color-text-muted);
+.skills-table {
+  width: 100%;
+  border-collapse: collapse;
   font-size: 0.95rem;
 }
 
-.skills__list li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
+.skills-table th,
+.skills-table td {
+  padding: var(--space-md) var(--space-lg);
+  text-align: left;
+  border: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.skills-table thead th {
+  background: var(--color-surface);
   color: var(--color-accent);
+  font-weight: 600;
   font-family: var(--font-mono);
   font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.skills-table tbody td:first-child {
+  color: var(--color-text);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.skills-table tbody td:last-child {
+  color: var(--color-text-muted);
 }
 
 /* --- Contact section --- */
@@ -282,7 +291,7 @@ main {
     margin-left: 0;
   }
 
-  .skills-grid {
-    grid-template-columns: 1fr;
+  .skills-table tbody td:first-child {
+    white-space: normal;
   }
 }
