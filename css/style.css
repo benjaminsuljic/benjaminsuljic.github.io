@@ -317,6 +317,7 @@ html.dark .icon-moon { display: none; }
   color: var(--color-text-secondary);
   max-width: 68ch;
   font-size: 0.97rem;
+  text-align: justify;
 }
 
 .btn-primary {
