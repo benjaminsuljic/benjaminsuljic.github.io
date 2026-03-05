@@ -4,353 +4,508 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Benjamin Suljic - Manager IT | SRE &amp; Cloud Platform Engineer">
-  <title>Benjamin Suljic | Resume</title>
+  <title>Benjamin Suljic | CV</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="nav" aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <div class="app-wrapper">
 
-  <main>
-    <section class="hero" id="hero">
-      <h1 class="hero__name">Benjamin Suljic</h1>
-      <p class="hero__role">Manager IT | Site Reliability Engineering</p>
-      <p class="hero__tagline">Cloud &amp; Platform Engineer &middot; Tuzla, Bosnia and Herzegovina</p>
-      <div class="hero__links">
-        <a href="https://www.linkedin.com/in/benjaminsuljic/" target="_blank" rel="noopener noreferrer" class="link link--primary">LinkedIn</a>
-        <a href="https://github.com/benjaminsuljic" target="_blank" rel="noopener noreferrer" class="link">GitHub</a>
+    <!-- ── Navigation ── -->
+    <header class="site-header">
+      <div class="header-inner">
+        <a href="#" class="site-brand">Benjamin Suljic</a>
+        <nav class="nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <svg class="icon icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
       </div>
-    </section>
+    </header>
 
-    <section class="section" id="about">
-      <h2 class="section__title">About</h2>
-      <p class="section__content about__text">
-        Dynamic and versatile computer engineer with 20+ years of experience spanning cloud infrastructure, networking, security, embedded systems, and software development. I specialize in architecting secure, scalable Azure environments, leading SRE teams, and driving enterprise modernization — from M365 tenant migrations to full endpoint management overhauls.
-      </p>
-      <p class="section__content about__text about__text--secondary">
-        My expertise covers the full IT stack: Azure IaC with Terraform, identity governance with Entra ID, endpoint management via Intune and Jamf, observability with New Relic, and perimeter security with Cloudflare WAF. I also bring hands-on software development experience in Java (Spring Boot), C/C++, Flutter/Dart, and JavaScript — bridging infrastructure and application teams.
-      </p>
-    </section>
+    <!-- ── Two-column layout ── -->
+    <div class="layout">
 
-    <section class="section" id="experience">
-      <h2 class="section__title">Experience</h2>
-      <div class="timeline">
-
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__role">Manager IT | SRE</span>
-            <span class="timeline__company">Salt Square</span>
-            <span class="timeline__date">Oct 2024 – Present</span>
-          </div>
-          <p class="timeline__description">
-            Leading IT and Site Reliability Engineering at Salt Square, overseeing infrastructure strategy, platform reliability, and corporate systems across M365, Microsoft Entra ID, and Azure.
+      <!-- ── Sidebar ── -->
+      <aside class="sidebar">
+        <div class="profile">
+          <div class="avatar" aria-hidden="true"><span>BS</span></div>
+          <h1 class="profile-name">Benjamin Suljic</h1>
+          <p class="profile-role">Manager IT | SRE</p>
+          <p class="profile-org">Salt Square</p>
+          <p class="profile-location">
+            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Tuzla, Bosnia and Herzegovina
           </p>
-        </article>
-
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__role">Senior Corporate Systems Engineer &amp; SRE Team Lead</span>
-            <span class="timeline__company">Vault Workforce Screening, a First Advantage Company &middot; Contract</span>
-            <span class="timeline__date">Sep 2022 – Dec 2024</span>
+          <div class="social-links">
+            <a href="https://www.linkedin.com/in/benjaminsuljic/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://github.com/benjaminsuljic" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
           </div>
-          <p class="timeline__description">SRE &amp; Infrastructure:</p>
-          <ul class="timeline__bullets">
-            <li>Managed a specialized SRE team reporting to the Director of Infrastructure, ensuring 24/7 high availability for a health-tech platform.</li>
-            <li>Architected Azure Infrastructure as Code (IaC) using Terraform to maintain scalable Production, Stage, and QA environments.</li>
-            <li>Optimized cloud spend via Azure Automation and Runbooks, implementing automated lifecycle scheduling for non-production environments.</li>
-            <li>Leveraged New Relic for SLA/SLO tracking and integrated Wazuh SIEM and Microsoft Defender for Cloud for proactive threat mitigation.</li>
-            <li>Deployed Cloudflare WAF with OWASP rules and Geo-blocking to secure application access.</li>
-            <li>Streamlined cross-environment patch management using Azure Update Manager.</li>
-          </ul>
-          <p class="timeline__description timeline__description--mt">Corporate Systems Engineering:</p>
-          <ul class="timeline__bullets">
-            <li>Spearheaded a full tenant migration from Google Workspace to M365 for 200+ users.</li>
-            <li>Engineered Entra ID Conditional Access policies enforcing MFA, session limits, and Named Locations for Zero Trust security.</li>
-            <li>Established a strict RBAC framework and automated end-to-end employee onboarding/offboarding lifecycle.</li>
-            <li>Migrated the global fleet from on-premises AD to Entra-joined, Intune-managed machines.</li>
-            <li>Configured Intune compliance policies and App Protection Policies (MAM) to secure corporate data on BYOD devices.</li>
-            <li>Utilized eDiscovery for legal data preservation; conducted monthly audits of user access and licensing.</li>
-            <li>Administered Jira for project workflows and integrated PagerDuty/Slack/Teams for real-time incident alerting.</li>
-          </ul>
-          <p class="timeline__tech">Azure &middot; Terraform &middot; Intune &middot; Entra ID &middot; M365 &middot; New Relic &middot; Wazuh &middot; Cloudflare &middot; Jira &middot; PagerDuty &middot; MS Defender</p>
-        </article>
+        </div>
+      </aside>
 
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__role">Senior Corporate Systems Engineer</span>
-            <span class="timeline__company">Salt Square</span>
-            <span class="timeline__date">Aug 2022 – Oct 2024</span>
-          </div>
-          <ul class="timeline__bullets">
-            <li>Maintained infrastructure as code in Microsoft Azure using Terraform.</li>
-            <li>Monitored Azure infrastructure and applications using New Relic.</li>
-            <li>Mobile device management using MS Intune, Jamf Pro, and Hexnode.</li>
-            <li>Maintained hybrid device infrastructure (on-prem Active Directory and Azure Entra ID).</li>
-            <li>Security using Microsoft 365 Defender and Microsoft Defender for Cloud.</li>
-            <li>Migrated on-premises workloads to Azure.</li>
-          </ul>
-        </article>
+      <!-- ── Main content ── -->
+      <main class="main-content">
 
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__role">Lead Expert Associate for Information and Communication Infrastructure</span>
-            <span class="timeline__company">JP Elektroprivreda BiH</span>
-            <span class="timeline__date">Jul 2022 – Aug 2022</span>
+        <!-- About -->
+        <section class="cv-section" id="about">
+          <div class="section-header">
+            <span class="section-icon" aria-hidden="true">🗂️</span>
+            <h2>Professional Summary</h2>
           </div>
-          <p class="timeline__description">Managing all aspects of key information and communication infrastructure.</p>
-        </article>
-
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__role">Expert Associate for Information and Communication Technologies</span>
-            <span class="timeline__company">JP Elektroprivreda BiH</span>
-            <span class="timeline__date">Nov 2009 – Jul 2022</span>
-          </div>
-          <p class="timeline__description">Security, design, implementation, administration, troubleshooting, and performance analysis of LAN and WAN systems:</p>
-          <ul class="timeline__bullets">
-            <li>Windows Server 2008 R2, 2012, 2016 Active Directory — configuration, deployment, and maintenance.</li>
-            <li>Linux Server administration (Oracle Linux, SUSE, Ubuntu).</li>
-            <li>Virtualization with Hyper-V and ESXi.</li>
-            <li>Kaspersky Endpoint Security deployment and maintenance on desktop and server machines.</li>
-            <li>SAP superuser (SD and MM modules).</li>
-          </ul>
-          <p class="timeline__description timeline__description--mt">Software Development:</p>
-          <ul class="timeline__bullets">
-            <li>Backend REST API development using Java Spring Boot, connecting legacy Oracle ERP with modern applications.</li>
-            <li>Mobile application development using Flutter and Dart.</li>
-            <li>Custom Java application for collecting data from industrial data loggers, visualized with Grafana.</li>
-            <li>Custom physical access control systems using Java and Raspberry Pi.</li>
-          </ul>
-        </article>
-
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__role">Software Developer</span>
-            <span class="timeline__company">Resonate d.o.o. Tuzla &middot; Part-time</span>
-            <span class="timeline__date">Dec 2018 – Dec 2019</span>
-          </div>
-          <p class="timeline__description">
-            Part-time software developer on medical software for cardiac ablation procedures, using C++ and the Qt 5 framework.
+          <p class="about-text">
+            Dynamic and versatile computer engineer with 20+ years of experience spanning cloud infrastructure, networking, security, embedded systems, and software development. I specialize in architecting secure, scalable Azure environments, leading SRE teams, and driving enterprise modernization — from M365 tenant migrations to full endpoint management overhauls.
           </p>
-        </article>
+          <p class="about-text">
+            My expertise covers the full IT stack: Azure IaC with Terraform, identity governance with Entra ID, endpoint management via Intune and Jamf, observability with New Relic, and perimeter security with Cloudflare WAF. I also bring hands-on software development experience in Java (Spring Boot), C/C++, Flutter/Dart, and JavaScript — bridging infrastructure and application teams.
+          </p>
+          <a href="https://www.linkedin.com/in/benjaminsuljic/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            View LinkedIn Profile
+          </a>
+        </section>
 
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__role">Embedded Software Developer</span>
-            <span class="timeline__company">pointES</span>
-            <span class="timeline__date">Jun 2009 – Nov 2009</span>
+        <!-- Experience -->
+        <section class="cv-section" id="experience">
+          <div class="section-header">
+            <span class="section-icon" aria-hidden="true">💼</span>
+            <h2>Experience</h2>
           </div>
-          <ul class="timeline__bullets">
-            <li>Continuation of work for BrainScope; experience with OMAP 5910 and DaVinci 6441 platforms.</li>
-            <li>Embedded Linux development in C/C++ with Qt 3/4.</li>
-            <li>Custom device drivers and real-time embedded GUI applications.</li>
-            <li>Supporting embedded software and custom filesystem for embedded devices.</li>
-          </ul>
-        </article>
+          <div class="timeline">
 
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__role">Embedded Software Developer</span>
-            <span class="timeline__company">Inspire LLC</span>
-            <span class="timeline__date">Jun 2006 – Jun 2009</span>
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-card-title">
+                  <span class="exp-role">Manager IT | SRE</span>
+                  <span class="exp-company">Salt Square</span>
+                </div>
+                <span class="exp-date">Oct 2024 – Present</span>
+              </div>
+              <p class="exp-desc">
+                Leading IT and Site Reliability Engineering at Salt Square, overseeing infrastructure strategy, platform reliability, and corporate systems across M365, Microsoft Entra ID, and Azure.
+              </p>
+              <div class="exp-tags">
+                <span class="tag">M365</span>
+                <span class="tag">Entra ID</span>
+                <span class="tag">Azure</span>
+                <span class="tag">SRE</span>
+              </div>
+            </article>
+
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-card-title">
+                  <span class="exp-role">Senior Corporate Systems Engineer &amp; SRE Team Lead</span>
+                  <span class="exp-company">Vault Workforce Screening, a First Advantage Company &middot; Contract</span>
+                </div>
+                <span class="exp-date">Sep 2022 – Dec 2024</span>
+              </div>
+              <p class="exp-desc exp-subheading">SRE &amp; Infrastructure</p>
+              <ul class="exp-bullets">
+                <li>Managed a specialized SRE team reporting to the Director of Infrastructure, ensuring 24/7 high availability for a health-tech platform.</li>
+                <li>Architected Azure IaC using Terraform to maintain scalable Production, Stage, and QA environments.</li>
+                <li>Optimized cloud spend via Azure Automation and Runbooks with automated lifecycle scheduling for non-production environments.</li>
+                <li>Leveraged New Relic for SLA/SLO tracking; integrated Wazuh SIEM and Microsoft Defender for Cloud for proactive threat mitigation.</li>
+                <li>Deployed Cloudflare WAF with OWASP rules and Geo-blocking to secure application access.</li>
+                <li>Streamlined cross-environment patch management using Azure Update Manager.</li>
+              </ul>
+              <p class="exp-desc exp-subheading">Corporate Systems Engineering</p>
+              <ul class="exp-bullets">
+                <li>Spearheaded a full tenant migration from Google Workspace to M365 for 200+ users.</li>
+                <li>Engineered Entra ID Conditional Access policies enforcing MFA, session limits, and Named Locations for Zero Trust security.</li>
+                <li>Established a strict RBAC framework and automated end-to-end employee onboarding/offboarding lifecycle.</li>
+                <li>Migrated the global fleet from on-premises AD to Entra-joined, Intune-managed machines.</li>
+                <li>Configured Intune compliance and App Protection Policies (MAM) to secure corporate data on BYOD devices.</li>
+                <li>Utilized eDiscovery for legal data preservation; conducted monthly audits of user access and licensing.</li>
+                <li>Administered Jira for project workflows and integrated PagerDuty/Slack/Teams for real-time incident alerting.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">Azure</span>
+                <span class="tag">Terraform</span>
+                <span class="tag">Intune</span>
+                <span class="tag">Entra ID</span>
+                <span class="tag">M365</span>
+                <span class="tag">New Relic</span>
+                <span class="tag">Wazuh</span>
+                <span class="tag">Cloudflare</span>
+                <span class="tag">PagerDuty</span>
+                <span class="tag">MS Defender</span>
+              </div>
+            </article>
+
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-card-title">
+                  <span class="exp-role">Senior Corporate Systems Engineer</span>
+                  <span class="exp-company">Salt Square</span>
+                </div>
+                <span class="exp-date">Aug 2022 – Oct 2024</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Maintained infrastructure as code in Microsoft Azure using Terraform.</li>
+                <li>Monitored Azure infrastructure and applications using New Relic.</li>
+                <li>Mobile device management using MS Intune, Jamf Pro, and Hexnode.</li>
+                <li>Maintained hybrid device infrastructure (on-prem Active Directory and Azure Entra ID).</li>
+                <li>Security using Microsoft 365 Defender and Microsoft Defender for Cloud.</li>
+                <li>Migrated on-premises workloads to Azure.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">Terraform</span>
+                <span class="tag">Intune</span>
+                <span class="tag">Jamf Pro</span>
+                <span class="tag">New Relic</span>
+                <span class="tag">MS Defender</span>
+              </div>
+            </article>
+
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-card-title">
+                  <span class="exp-role">Lead Expert Associate for Information and Communication Infrastructure</span>
+                  <span class="exp-company">JP Elektroprivreda BiH</span>
+                </div>
+                <span class="exp-date">Jul 2022 – Aug 2022</span>
+              </div>
+              <p class="exp-desc">Managing all aspects of key information and communication infrastructure.</p>
+            </article>
+
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-card-title">
+                  <span class="exp-role">Expert Associate for Information and Communication Technologies</span>
+                  <span class="exp-company">JP Elektroprivreda BiH</span>
+                </div>
+                <span class="exp-date">Nov 2009 – Jul 2022</span>
+              </div>
+              <p class="exp-desc exp-subheading">Infrastructure &amp; Systems</p>
+              <ul class="exp-bullets">
+                <li>Windows Server 2008 R2, 2012, 2016 Active Directory — configuration, deployment, and maintenance.</li>
+                <li>Linux Server administration (Oracle Linux, SUSE, Ubuntu).</li>
+                <li>Virtualization with Hyper-V and ESXi.</li>
+                <li>Kaspersky Endpoint Security deployment and maintenance on desktop and server machines.</li>
+                <li>SAP superuser (SD and MM modules).</li>
+              </ul>
+              <p class="exp-desc exp-subheading">Software Development</p>
+              <ul class="exp-bullets">
+                <li>Backend REST API development using Java Spring Boot, connecting legacy Oracle ERP with modern applications.</li>
+                <li>Mobile application development using Flutter and Dart.</li>
+                <li>Custom Java application for collecting data from industrial data loggers, visualized with Grafana.</li>
+                <li>Custom physical access control systems using Java and Raspberry Pi.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">Java</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Flutter</span>
+                <span class="tag">Hyper-V</span>
+                <span class="tag">ESXi</span>
+                <span class="tag">Grafana</span>
+                <span class="tag">Oracle</span>
+              </div>
+            </article>
+
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-card-title">
+                  <span class="exp-role">Software Developer</span>
+                  <span class="exp-company">Resonate d.o.o. Tuzla &middot; Part-time</span>
+                </div>
+                <span class="exp-date">Dec 2018 – Dec 2019</span>
+              </div>
+              <p class="exp-desc">
+                Part-time software developer on medical software for cardiac ablation procedures, using C++ and the Qt 5 framework.
+              </p>
+              <div class="exp-tags">
+                <span class="tag">C++</span>
+                <span class="tag">Qt 5</span>
+                <span class="tag">SQL</span>
+              </div>
+            </article>
+
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-card-title">
+                  <span class="exp-role">Embedded Software Developer</span>
+                  <span class="exp-company">pointES</span>
+                </div>
+                <span class="exp-date">Jun 2009 – Nov 2009</span>
+              </div>
+              <ul class="exp-bullets">
+                <li>Continuation of work for BrainScope; OMAP 5910 and DaVinci 6441 platforms.</li>
+                <li>Embedded Linux development in C/C++ with Qt 3/4.</li>
+                <li>Custom device drivers and real-time embedded GUI applications.</li>
+                <li>Supporting embedded software and custom filesystem for embedded devices.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">C</span>
+                <span class="tag">C++</span>
+                <span class="tag">Qt</span>
+                <span class="tag">Embedded Linux</span>
+              </div>
+            </article>
+
+            <article class="exp-card">
+              <div class="exp-card-header">
+                <div class="exp-card-title">
+                  <span class="exp-role">Embedded Software Developer</span>
+                  <span class="exp-company">Inspire LLC</span>
+                </div>
+                <span class="exp-date">Jun 2006 – Jun 2009</span>
+              </div>
+              <p class="exp-desc">Developed portable medical devices for BrainScope (USA):</p>
+              <ul class="exp-bullets">
+                <li>OMAP 5910 and DaVinci 6441 platforms and embedded Linux.</li>
+                <li>Software development in C/C++ with Qt 3/4.</li>
+                <li>Custom device drivers and embedded real-time GUI applications.</li>
+                <li>Supporting embedded software and custom filesystem development.</li>
+              </ul>
+              <div class="exp-tags">
+                <span class="tag">C</span>
+                <span class="tag">C++</span>
+                <span class="tag">Qt</span>
+                <span class="tag">Embedded Linux</span>
+              </div>
+            </article>
+
           </div>
-          <p class="timeline__description">Developed portable medical devices for BrainScope (USA):</p>
-          <ul class="timeline__bullets">
-            <li>Experience with OMAP 5910 and DaVinci 6441 platforms and embedded Linux.</li>
-            <li>Software development in C/C++ with Qt 3/4.</li>
-            <li>Custom device drivers and embedded real-time GUI applications.</li>
-            <li>Supporting embedded software and custom filesystem development.</li>
-          </ul>
-        </article>
+        </section>
 
-      </div>
-    </section>
-
-    <section class="section" id="education">
-      <h2 class="section__title">Education</h2>
-      <div class="timeline">
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__role">mr.sci., Technical Informatics</span>
-            <span class="timeline__company">University of Tuzla, Faculty of Electrical Engineering</span>
-            <span class="timeline__date">2008 – 2012</span>
+        <!-- Education -->
+        <section class="cv-section" id="education">
+          <div class="section-header">
+            <span class="section-icon" aria-hidden="true">🎓</span>
+            <h2>Education</h2>
           </div>
-          <p class="timeline__description">Software, hardware, automation.</p>
-        </article>
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__role">dipl.ing.el., Technical Informatics</span>
-            <span class="timeline__company">University of Tuzla, Faculty of Electrical Engineering</span>
-            <span class="timeline__date">2001 – 2006</span>
+          <div class="edu-grid">
+            <div class="edu-card">
+              <div class="edu-icon-wrap" aria-hidden="true">🎓</div>
+              <div class="edu-info">
+                <span class="edu-degree">mr.sci., Technical Informatics</span>
+                <span class="edu-school">University of Tuzla, Faculty of Electrical Engineering</span>
+                <span class="edu-dates">2008 – 2012</span>
+              </div>
+            </div>
+            <div class="edu-card">
+              <div class="edu-icon-wrap" aria-hidden="true">🎓</div>
+              <div class="edu-info">
+                <span class="edu-degree">dipl.ing.el., Technical Informatics</span>
+                <span class="edu-school">University of Tuzla, Faculty of Electrical Engineering</span>
+                <span class="edu-dates">2001 – 2006</span>
+              </div>
+            </div>
           </div>
-          <p class="timeline__description">Software, hardware, automation.</p>
-        </article>
-      </div>
-    </section>
+        </section>
 
-    <section class="section" id="certifications">
-      <h2 class="section__title">Licenses &amp; Certifications</h2>
-      <div class="cert-grid">
-        <div class="cert-card">
-          <span class="cert-name">Microsoft Certified: Azure Fundamentals</span>
-          <span class="cert-issuer">Microsoft</span>
-          <span class="cert-date">Jul 2023</span>
-        </div>
-        <div class="cert-card">
-          <span class="cert-name">GIAC Security Essentials Certification (GSEC)</span>
-          <span class="cert-issuer">GIAC Certifications</span>
-          <span class="cert-date">May 2015</span>
-        </div>
-        <div class="cert-card">
-          <span class="cert-name">MS: Server Virtualization with Windows Server Hyper-V and System Center Specialist</span>
-          <span class="cert-issuer">Microsoft</span>
-          <span class="cert-date">Nov 2014</span>
-        </div>
-        <div class="cert-card">
-          <span class="cert-name">Microsoft Certified Professional</span>
-          <span class="cert-issuer">Microsoft</span>
-          <span class="cert-date">Jul 2014</span>
-        </div>
-        <div class="cert-card">
-          <span class="cert-name">Windows Server 2012</span>
-          <span class="cert-issuer">Microsoft</span>
-          <span class="cert-date">Sep 2014</span>
-        </div>
-        <div class="cert-card">
-          <span class="cert-name">Oracle Database 18c Administration Workshop</span>
-          <span class="cert-issuer">Oracle</span>
-          <span class="cert-date">Nov 2020</span>
-        </div>
-        <div class="cert-card">
-          <span class="cert-name">Oracle Database 11g: Administration Workshop II</span>
-          <span class="cert-issuer">Oracle University</span>
-          <span class="cert-date">Jul 2016</span>
-        </div>
-        <div class="cert-card">
-          <span class="cert-name">Oracle Database 12c: SQL and PL/SQL Fundamentals</span>
-          <span class="cert-issuer">Oracle University</span>
-          <span class="cert-date">Jul 2016</span>
-        </div>
-        <div class="cert-card">
-          <span class="cert-name">Flutter &amp; Dart – The Complete Guide</span>
-          <span class="cert-issuer">Udemy</span>
-          <span class="cert-date">Feb 2021</span>
-        </div>
-        <div class="cert-card">
-          <span class="cert-name">Embedded Systems – Shape the World (Honor Code Certificate)</span>
-          <span class="cert-issuer">edX</span>
-          <span class="cert-date">May 2016</span>
-        </div>
-        <div class="cert-card">
-          <span class="cert-name">Build Responsive Real World Websites with HTML5 and CSS3</span>
-          <span class="cert-issuer">Udemy</span>
-          <span class="cert-date">Dec 2015</span>
-        </div>
-        <div class="cert-card">
-          <span class="cert-name">PHP for Beginners</span>
-          <span class="cert-issuer">Udemy</span>
-          <span class="cert-date">Feb 2016</span>
-        </div>
-      </div>
-    </section>
+        <!-- Certifications -->
+        <section class="cv-section" id="certifications">
+          <div class="section-header">
+            <span class="section-icon" aria-hidden="true">🏅</span>
+            <h2>Licenses &amp; Certifications</h2>
+          </div>
+          <div class="cert-grid">
+            <div class="cert-card">
+              <span class="cert-name">Microsoft Certified: Azure Fundamentals</span>
+              <span class="cert-issuer">Microsoft</span>
+              <span class="cert-date">Jul 2023</span>
+            </div>
+            <div class="cert-card">
+              <span class="cert-name">GIAC Security Essentials Certification (GSEC)</span>
+              <span class="cert-issuer">GIAC Certifications</span>
+              <span class="cert-date">May 2015</span>
+            </div>
+            <div class="cert-card">
+              <span class="cert-name">MS: Server Virtualization with Windows Server Hyper-V and System Center Specialist</span>
+              <span class="cert-issuer">Microsoft</span>
+              <span class="cert-date">Nov 2014</span>
+            </div>
+            <div class="cert-card">
+              <span class="cert-name">Microsoft Certified Professional</span>
+              <span class="cert-issuer">Microsoft</span>
+              <span class="cert-date">Jul 2014</span>
+            </div>
+            <div class="cert-card">
+              <span class="cert-name">Windows Server 2012</span>
+              <span class="cert-issuer">Microsoft</span>
+              <span class="cert-date">Sep 2014</span>
+            </div>
+            <div class="cert-card">
+              <span class="cert-name">Oracle Database 18c Administration Workshop</span>
+              <span class="cert-issuer">Oracle</span>
+              <span class="cert-date">Nov 2020</span>
+            </div>
+            <div class="cert-card">
+              <span class="cert-name">Oracle Database 11g: Administration Workshop II</span>
+              <span class="cert-issuer">Oracle University</span>
+              <span class="cert-date">Jul 2016</span>
+            </div>
+            <div class="cert-card">
+              <span class="cert-name">Oracle Database 12c: SQL and PL/SQL Fundamentals</span>
+              <span class="cert-issuer">Oracle University</span>
+              <span class="cert-date">Jul 2016</span>
+            </div>
+            <div class="cert-card">
+              <span class="cert-name">Flutter &amp; Dart – The Complete Guide</span>
+              <span class="cert-issuer">Udemy</span>
+              <span class="cert-date">Feb 2021</span>
+            </div>
+            <div class="cert-card">
+              <span class="cert-name">Embedded Systems – Shape the World</span>
+              <span class="cert-issuer">edX</span>
+              <span class="cert-date">May 2016</span>
+            </div>
+            <div class="cert-card">
+              <span class="cert-name">Build Responsive Real World Websites with HTML5 and CSS3</span>
+              <span class="cert-issuer">Udemy</span>
+              <span class="cert-date">Dec 2015</span>
+            </div>
+            <div class="cert-card">
+              <span class="cert-name">PHP for Beginners</span>
+              <span class="cert-issuer">Udemy</span>
+              <span class="cert-date">Feb 2016</span>
+            </div>
+          </div>
+        </section>
 
-    <section class="section" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <div class="skills-table-wrap">
-        <table class="skills-table">
-          <colgroup>
-            <col class="col-category">
-            <col class="col-tools">
-          </colgroup>
-          <thead>
-            <tr>
-              <th>Category</th>
-              <th>Technologies &amp; Tools</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Cloud &amp; Platform Engineering</td>
-              <td>Microsoft Azure, M365, Entra ID, Azure Update Manager, Azure Automation</td>
-            </tr>
-            <tr>
-              <td>Infrastructure as Code</td>
-              <td>Terraform, Azure Resource Manager (ARM)</td>
-            </tr>
-            <tr>
-              <td>SRE &amp; Observability</td>
-              <td>New Relic, Grafana, SLA/SLO Tracking, PagerDuty, Incident Management</td>
-            </tr>
-            <tr>
-              <td>Endpoint Management</td>
-              <td>Microsoft Intune, Jamf Pro, Hexnode, SCCM, MDM/MAM</td>
-            </tr>
-            <tr>
-              <td>Cybersecurity</td>
-              <td>Microsoft Defender for Endpoint, Defender for Cloud, Wazuh SIEM, Cloudflare WAF, Entra ID Conditional Access, RBAC, Zero Trust</td>
-            </tr>
-            <tr>
-              <td>Networking</td>
-              <td>LAN/WAN Design &amp; Administration, TCP/IP, Cloudflare, Perimeter Security</td>
-            </tr>
-            <tr>
-              <td>Virtualization</td>
-              <td>VMware ESXi, Microsoft Hyper-V</td>
-            </tr>
-            <tr>
-              <td>Operating Systems</td>
-              <td>Windows Server (2008 R2 – 2022), Linux (Oracle, SUSE, Ubuntu), macOS</td>
-            </tr>
-            <tr>
-              <td>Directory Services</td>
-              <td>Active Directory, Entra ID (Azure AD), Group Policy (GPO), LDAP, RBAC</td>
-            </tr>
-            <tr>
-              <td>Automation &amp; Scripting</td>
-              <td>PowerShell, Bash, Power Automate, Terraform, Azure Runbooks</td>
-            </tr>
-            <tr>
-              <td>Programming</td>
-              <td>Java (Spring Boot), C, C++ (Qt 3/4/5), Flutter &amp; Dart, JavaScript, HTML5, CSS3, PHP</td>
-            </tr>
-            <tr>
-              <td>Databases</td>
-              <td>Oracle, MySQL, SQL, PL/SQL</td>
-            </tr>
-            <tr>
-              <td>Backup &amp; Recovery</td>
-              <td>Veeam</td>
-            </tr>
-            <tr>
-              <td>Collaboration &amp; ITSM</td>
-              <td>Jira, Microsoft Teams, Slack, eDiscovery, PagerDuty</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+        <!-- Skills -->
+        <section class="cv-section" id="skills">
+          <div class="section-header">
+            <span class="section-icon" aria-hidden="true">⚡</span>
+            <h2>Skills</h2>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <h3 class="skill-group-title">Cloud &amp; Platform</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Microsoft Azure</span>
+                <span class="skill-tag">M365</span>
+                <span class="skill-tag">Entra ID</span>
+                <span class="skill-tag">Azure Automation</span>
+                <span class="skill-tag">Azure Update Manager</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group-title">Infrastructure as Code</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Terraform</span>
+                <span class="skill-tag">ARM Templates</span>
+                <span class="skill-tag">Azure Runbooks</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group-title">SRE &amp; Observability</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">New Relic</span>
+                <span class="skill-tag">Grafana</span>
+                <span class="skill-tag">SLA/SLO Tracking</span>
+                <span class="skill-tag">PagerDuty</span>
+                <span class="skill-tag">Incident Management</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group-title">Endpoint Management</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Microsoft Intune</span>
+                <span class="skill-tag">Jamf Pro</span>
+                <span class="skill-tag">Hexnode</span>
+                <span class="skill-tag">SCCM</span>
+                <span class="skill-tag">MDM/MAM</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group-title">Cybersecurity</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">MS Defender for Endpoint</span>
+                <span class="skill-tag">Defender for Cloud</span>
+                <span class="skill-tag">Wazuh SIEM</span>
+                <span class="skill-tag">Cloudflare WAF</span>
+                <span class="skill-tag">Zero Trust</span>
+                <span class="skill-tag">RBAC</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group-title">Virtualization &amp; OS</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">VMware ESXi</span>
+                <span class="skill-tag">Hyper-V</span>
+                <span class="skill-tag">Windows Server</span>
+                <span class="skill-tag">Linux (RHEL, SUSE, Ubuntu)</span>
+                <span class="skill-tag">macOS</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group-title">Directory Services</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Active Directory</span>
+                <span class="skill-tag">Entra ID (Azure AD)</span>
+                <span class="skill-tag">Group Policy (GPO)</span>
+                <span class="skill-tag">LDAP</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group-title">Automation &amp; Scripting</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">PowerShell</span>
+                <span class="skill-tag">Bash</span>
+                <span class="skill-tag">Power Automate</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group-title">Programming</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Java (Spring Boot)</span>
+                <span class="skill-tag">C / C++</span>
+                <span class="skill-tag">Qt 3/4/5</span>
+                <span class="skill-tag">Flutter &amp; Dart</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">HTML5 / CSS3</span>
+                <span class="skill-tag">PHP</span>
+              </div>
+            </div>
+            <div class="skill-group">
+              <h3 class="skill-group-title">Databases &amp; Backup</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Oracle</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">SQL / PL/SQL</span>
+                <span class="skill-tag">Veeam</span>
+              </div>
+            </div>
+          </div>
+        </section>
 
-    <section class="section section--contact" id="contact">
-      <h2 class="section__title">Get in touch</h2>
-      <p class="section__content">Open to new opportunities and conversations.</p>
-      <a href="https://www.linkedin.com/in/benjaminsuljic/" target="_blank" rel="noopener noreferrer" class="btn">Connect on LinkedIn</a>
-    </section>
-  </main>
+        <!-- Contact -->
+        <section class="cv-section cv-section--last" id="contact">
+          <div class="section-header">
+            <span class="section-icon" aria-hidden="true">✉️</span>
+            <h2>Contact</h2>
+          </div>
+          <p class="about-text">Open to new opportunities and conversations.</p>
+          <a href="https://www.linkedin.com/in/benjaminsuljic/" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            Connect on LinkedIn
+          </a>
+        </section>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Benjamin Suljic</p>
-  </footer>
+      </main>
+    </div><!-- /.layout -->
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Benjamin Suljic</p>
+    </footer>
+
+  </div><!-- /.app-wrapper -->
 
   <script src="js/main.js"></script>
 </body>
