@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Benjamin Suljic - Resume & Portfolio">
+  <meta name="description" content="Benjamin Suljic - Manager IT | SRE &amp; Cloud Platform Engineer">
   <title>Benjamin Suljic | Resume</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,6 +16,7 @@
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#education">Education</a>
+      <a href="#certifications">Certifications</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -24,10 +25,10 @@
   <main>
     <section class="hero" id="hero">
       <h1 class="hero__name">Benjamin Suljic</h1>
-      <p class="hero__tagline">Specializing in modernizing enterprise infrastructure through Azure, M365, and cross-platform endpoint management.</p>
+      <p class="hero__role">Manager IT | Site Reliability Engineering</p>
+      <p class="hero__tagline">Cloud &amp; Platform Engineer &middot; Tuzla, Bosnia and Herzegovina</p>
       <div class="hero__links">
-        <a href="mailto:your.email@example.com" class="link link--primary">Email</a>
-        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="link">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/benjaminsuljic/" target="_blank" rel="noopener noreferrer" class="link link--primary">LinkedIn</a>
         <a href="https://github.com/benjaminsuljic" target="_blank" rel="noopener noreferrer" class="link">GitHub</a>
       </div>
     </section>
@@ -35,75 +36,144 @@
     <section class="section" id="about">
       <h2 class="section__title">About</h2>
       <p class="section__content about__text">
-        Results-driven Cloud Systems & Platform Engineer specializing in modernizing enterprise infrastructure. 
-        Expert in orchestrating secure, scalable environments across Azure and M365, with a deep focus on identity management via Entra ID. 
-        I bridge the gap between legacy and cloud-native workflows by leveraging Intune, SCCM, and Jamf to ensure seamless endpoint management and a robust security posture through Microsoft Defender.
+        Dynamic and versatile computer engineer with 20+ years of experience spanning cloud infrastructure, networking, security, embedded systems, and software development. I specialize in architecting secure, scalable Azure environments, leading SRE teams, and driving enterprise modernization — from M365 tenant migrations to full endpoint management overhauls.
+      </p>
+      <p class="section__content about__text about__text--secondary">
+        My expertise covers the full IT stack: Azure IaC with Terraform, identity governance with Entra ID, endpoint management via Intune and Jamf, observability with New Relic, and perimeter security with Cloudflare WAF. I also bring hands-on software development experience in Java (Spring Boot), C/C++, Flutter/Dart, and JavaScript — bridging infrastructure and application teams.
       </p>
     </section>
 
     <section class="section" id="experience">
       <h2 class="section__title">Experience</h2>
       <div class="timeline">
+
+        <article class="timeline__item">
+          <div class="timeline__meta">
+            <span class="timeline__role">Manager IT | SRE</span>
+            <span class="timeline__company">Salt Square</span>
+            <span class="timeline__date">Oct 2024 – Present</span>
+          </div>
+          <p class="timeline__description">
+            Leading IT and Site Reliability Engineering at Salt Square, overseeing infrastructure strategy, platform reliability, and corporate systems across M365, Microsoft Entra ID, and Azure.
+          </p>
+        </article>
+
+        <article class="timeline__item">
+          <div class="timeline__meta">
+            <span class="timeline__role">Senior Corporate Systems Engineer &amp; SRE Team Lead</span>
+            <span class="timeline__company">Vault Workforce Screening, a First Advantage Company &middot; Contract</span>
+            <span class="timeline__date">Sep 2022 – Dec 2024</span>
+          </div>
+          <p class="timeline__description">SRE &amp; Infrastructure:</p>
+          <ul class="timeline__bullets">
+            <li>Managed a specialized SRE team reporting to the Director of Infrastructure, ensuring 24/7 high availability for a health-tech platform.</li>
+            <li>Architected Azure Infrastructure as Code (IaC) using Terraform to maintain scalable Production, Stage, and QA environments.</li>
+            <li>Optimized cloud spend via Azure Automation and Runbooks, implementing automated lifecycle scheduling for non-production environments.</li>
+            <li>Leveraged New Relic for SLA/SLO tracking and integrated Wazuh SIEM and Microsoft Defender for Cloud for proactive threat mitigation.</li>
+            <li>Deployed Cloudflare WAF with OWASP rules and Geo-blocking to secure application access.</li>
+            <li>Streamlined cross-environment patch management using Azure Update Manager.</li>
+          </ul>
+          <p class="timeline__description timeline__description--mt">Corporate Systems Engineering:</p>
+          <ul class="timeline__bullets">
+            <li>Spearheaded a full tenant migration from Google Workspace to M365 for 200+ users.</li>
+            <li>Engineered Entra ID Conditional Access policies enforcing MFA, session limits, and Named Locations for Zero Trust security.</li>
+            <li>Established a strict RBAC framework and automated end-to-end employee onboarding/offboarding lifecycle.</li>
+            <li>Migrated the global fleet from on-premises AD to Entra-joined, Intune-managed machines.</li>
+            <li>Configured Intune compliance policies and App Protection Policies (MAM) to secure corporate data on BYOD devices.</li>
+            <li>Utilized eDiscovery for legal data preservation; conducted monthly audits of user access and licensing.</li>
+            <li>Administered Jira for project workflows and integrated PagerDuty/Slack/Teams for real-time incident alerting.</li>
+          </ul>
+          <p class="timeline__tech">Azure &middot; Terraform &middot; Intune &middot; Entra ID &middot; M365 &middot; New Relic &middot; Wazuh &middot; Cloudflare &middot; Jira &middot; PagerDuty &middot; MS Defender</p>
+        </article>
+
         <article class="timeline__item">
           <div class="timeline__meta">
             <span class="timeline__role">Senior Corporate Systems Engineer</span>
             <span class="timeline__company">Salt Square</span>
-            <span class="timeline__date">Aug 2022 – Present</span>
+            <span class="timeline__date">Aug 2022 – Oct 2024</span>
           </div>
-          <p class="timeline__description">
-            As a Senior Corporate System Engineer, I excel in architecting and managing cutting-edge technology solutions that drive efficiency, security, and innovation.
-          </p>
+          <ul class="timeline__bullets">
+            <li>Maintained infrastructure as code in Microsoft Azure using Terraform.</li>
+            <li>Monitored Azure infrastructure and applications using New Relic.</li>
+            <li>Mobile device management using MS Intune, Jamf Pro, and Hexnode.</li>
+            <li>Maintained hybrid device infrastructure (on-prem Active Directory and Azure Entra ID).</li>
+            <li>Security using Microsoft 365 Defender and Microsoft Defender for Cloud.</li>
+            <li>Migrated on-premises workloads to Azure.</li>
+          </ul>
         </article>
+
         <article class="timeline__item">
           <div class="timeline__meta">
-            <span class="timeline__role">Lead Expert Associate for Infomation and Comunnication Infrastructure</span>
-            <span class="timeline__company">JP EP BiH</span>
+            <span class="timeline__role">Lead Expert Associate for Information and Communication Infrastructure</span>
+            <span class="timeline__company">JP Elektroprivreda BiH</span>
             <span class="timeline__date">Jul 2022 – Aug 2022</span>
           </div>
-          <p class="timeline__description">
-            Managing all aspects of key infrastructure.
-          </p>
+          <p class="timeline__description">Managing all aspects of key information and communication infrastructure.</p>
         </article>
+
         <article class="timeline__item">
           <div class="timeline__meta">
-            <span class="timeline__role">Expert associate for Infomation and Comunnication Technologies</span>
-            <span class="timeline__company">JP EP BiH</span>
+            <span class="timeline__role">Expert Associate for Information and Communication Technologies</span>
+            <span class="timeline__company">JP Elektroprivreda BiH</span>
             <span class="timeline__date">Nov 2009 – Jul 2022</span>
           </div>
-          <p class="timeline__description">
-            Security, design, implementation, administration, problem troubleshooting and performance analysis of LAN and WAN systems.
-          </p>
+          <p class="timeline__description">Security, design, implementation, administration, troubleshooting, and performance analysis of LAN and WAN systems:</p>
+          <ul class="timeline__bullets">
+            <li>Windows Server 2008 R2, 2012, 2016 Active Directory — configuration, deployment, and maintenance.</li>
+            <li>Linux Server administration (Oracle Linux, SUSE, Ubuntu).</li>
+            <li>Virtualization with Hyper-V and ESXi.</li>
+            <li>Kaspersky Endpoint Security deployment and maintenance on desktop and server machines.</li>
+            <li>SAP superuser (SD and MM modules).</li>
+          </ul>
+          <p class="timeline__description timeline__description--mt">Software Development:</p>
+          <ul class="timeline__bullets">
+            <li>Backend REST API development using Java Spring Boot, connecting legacy Oracle ERP with modern applications.</li>
+            <li>Mobile application development using Flutter and Dart.</li>
+            <li>Custom Java application for collecting data from industrial data loggers, visualized with Grafana.</li>
+            <li>Custom physical access control systems using Java and Raspberry Pi.</li>
+          </ul>
         </article>
-        <article class="timeline__item">
-          <div class="timeline__meta">
-            <span class="timeline__role">Lecturer at Internacionala poslovno-informaciona akademija Tuzla (IPI Akademija)</span>
-            <span class="timeline__company">Internacionalna poslovno-informaciona akademija Tuzla</span>
-            <span class="timeline__date">Mar 2015 – Dec 2023</span>
-          </div>
-          <p class="timeline__description">
-            As an experienced educator, I am dedicated to nurturing the next generation of tech-savvy professionals. In my role as a lecturer, I have the privilege of teaching a diverse range of courses that empower students with the knowledge and skills needed to excel in the ever-evolving field of technology.
-          </p>
-        </article>
+
         <article class="timeline__item">
           <div class="timeline__meta">
             <span class="timeline__role">Software Developer</span>
-            <span class="timeline__company">Resonate d.o.o Tuzla</span>
+            <span class="timeline__company">Resonate d.o.o. Tuzla &middot; Part-time</span>
             <span class="timeline__date">Dec 2018 – Dec 2019</span>
           </div>
           <p class="timeline__description">
-            Part time software developer, working on medical software for cardiac ablation procedure. Developing software using C++ and Qt 5 framework.
+            Part-time software developer on medical software for cardiac ablation procedures, using C++ and the Qt 5 framework.
           </p>
         </article>
+
         <article class="timeline__item">
           <div class="timeline__meta">
             <span class="timeline__role">Embedded Software Developer</span>
-            <span class="timeline__company">Inspire d.o.o Tuzla and pointES d.o.o Tuzla</span>
-            <span class="timeline__date">Jun 2006 – Nov 2009</span>
+            <span class="timeline__company">pointES</span>
+            <span class="timeline__date">Jun 2009 – Nov 2009</span>
           </div>
-          <p class="timeline__description">
-            Working for an American company BrainScope developing portable medical device using C++ and Qt 3/4 framework.
-          </p>
+          <ul class="timeline__bullets">
+            <li>Continuation of work for BrainScope; experience with OMAP 5910 and DaVinci 6441 platforms.</li>
+            <li>Embedded Linux development in C/C++ with Qt 3/4.</li>
+            <li>Custom device drivers and real-time embedded GUI applications.</li>
+            <li>Supporting embedded software and custom filesystem for embedded devices.</li>
+          </ul>
         </article>
+
+        <article class="timeline__item">
+          <div class="timeline__meta">
+            <span class="timeline__role">Embedded Software Developer</span>
+            <span class="timeline__company">Inspire LLC</span>
+            <span class="timeline__date">Jun 2006 – Jun 2009</span>
+          </div>
+          <p class="timeline__description">Developed portable medical devices for BrainScope (USA):</p>
+          <ul class="timeline__bullets">
+            <li>Experience with OMAP 5910 and DaVinci 6441 platforms and embedded Linux.</li>
+            <li>Software development in C/C++ with Qt 3/4.</li>
+            <li>Custom device drivers and embedded real-time GUI applications.</li>
+            <li>Supporting embedded software and custom filesystem development.</li>
+          </ul>
+        </article>
+
       </div>
     </section>
 
@@ -112,20 +182,86 @@
       <div class="timeline">
         <article class="timeline__item">
           <div class="timeline__meta">
-            <span class="timeline__role">mr.sci., Technical informatics</span>
+            <span class="timeline__role">mr.sci., Technical Informatics</span>
             <span class="timeline__company">University of Tuzla, Faculty of Electrical Engineering</span>
             <span class="timeline__date">2008 – 2012</span>
           </div>
-          <p class="timeline__description">Software, hardware, automatic.</p>
+          <p class="timeline__description">Software, hardware, automation.</p>
         </article>
         <article class="timeline__item">
           <div class="timeline__meta">
-            <span class="timeline__role">dipl.ing.el., Technical informatics</span>
+            <span class="timeline__role">dipl.ing.el., Technical Informatics</span>
             <span class="timeline__company">University of Tuzla, Faculty of Electrical Engineering</span>
             <span class="timeline__date">2001 – 2006</span>
           </div>
-          <p class="timeline__description">Software, hardware, automatic.</p>
+          <p class="timeline__description">Software, hardware, automation.</p>
         </article>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <h2 class="section__title">Licenses &amp; Certifications</h2>
+      <div class="cert-grid">
+        <div class="cert-card">
+          <span class="cert-name">Microsoft Certified: Azure Fundamentals</span>
+          <span class="cert-issuer">Microsoft</span>
+          <span class="cert-date">Jul 2023</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">GIAC Security Essentials Certification (GSEC)</span>
+          <span class="cert-issuer">GIAC Certifications</span>
+          <span class="cert-date">May 2015</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">MS: Server Virtualization with Windows Server Hyper-V and System Center Specialist</span>
+          <span class="cert-issuer">Microsoft</span>
+          <span class="cert-date">Nov 2014</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">Microsoft Certified Professional</span>
+          <span class="cert-issuer">Microsoft</span>
+          <span class="cert-date">Jul 2014</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">Windows Server 2012</span>
+          <span class="cert-issuer">Microsoft</span>
+          <span class="cert-date">Sep 2014</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">Oracle Database 18c Administration Workshop</span>
+          <span class="cert-issuer">Oracle</span>
+          <span class="cert-date">Nov 2020</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">Oracle Database 11g: Administration Workshop II</span>
+          <span class="cert-issuer">Oracle University</span>
+          <span class="cert-date">Jul 2016</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">Oracle Database 12c: SQL and PL/SQL Fundamentals</span>
+          <span class="cert-issuer">Oracle University</span>
+          <span class="cert-date">Jul 2016</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">Flutter &amp; Dart – The Complete Guide</span>
+          <span class="cert-issuer">Udemy</span>
+          <span class="cert-date">Feb 2021</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">Embedded Systems – Shape the World (Honor Code Certificate)</span>
+          <span class="cert-issuer">edX</span>
+          <span class="cert-date">May 2016</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">Build Responsive Real World Websites with HTML5 and CSS3</span>
+          <span class="cert-issuer">Udemy</span>
+          <span class="cert-date">Dec 2015</span>
+        </div>
+        <div class="cert-card">
+          <span class="cert-name">PHP for Beginners</span>
+          <span class="cert-issuer">Udemy</span>
+          <span class="cert-date">Feb 2016</span>
+        </div>
       </div>
     </section>
 
@@ -140,45 +276,65 @@
           <thead>
             <tr>
               <th>Category</th>
-              <th>Technologies &amp; tools</th>
+              <th>Technologies &amp; Tools</th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Cloud & Platform Engineering</td>
-              <td>Azure, Entra ID, M365</td>
+              <td>Cloud &amp; Platform Engineering</td>
+              <td>Microsoft Azure, M365, Entra ID, Azure Update Manager, Azure Automation</td>
+            </tr>
+            <tr>
+              <td>Infrastructure as Code</td>
+              <td>Terraform, Azure Resource Manager (ARM)</td>
+            </tr>
+            <tr>
+              <td>SRE &amp; Observability</td>
+              <td>New Relic, Grafana, SLA/SLO Tracking, PagerDuty, Incident Management</td>
             </tr>
             <tr>
               <td>Endpoint Management</td>
-              <td>Intune, SCCM, Jamf</td>
+              <td>Microsoft Intune, Jamf Pro, Hexnode, SCCM, MDM/MAM</td>
             </tr>
             <tr>
               <td>Cybersecurity</td>
-              <td>Microsoft Defender for Endpoint, Microfost Defender for Cloud, GreyMatter ReliaQuest, Wiz, Rapid7</td>
+              <td>Microsoft Defender for Endpoint, Defender for Cloud, Wazuh SIEM, Cloudflare WAF, Entra ID Conditional Access, RBAC, Zero Trust</td>
             </tr>
             <tr>
-              <td>Operating Systems</td>
-              <td>Windows Server (2019/2022), Linux (RHEL, Ubuntu), macOS</td>
+              <td>Networking</td>
+              <td>LAN/WAN Design &amp; Administration, TCP/IP, Cloudflare, Perimeter Security</td>
             </tr>
             <tr>
               <td>Virtualization</td>
               <td>VMware ESXi, Microsoft Hyper-V</td>
             </tr>
             <tr>
-              <td>Cloud Infrastructure</td>
-              <td>Microsoft Azure</td>
-            </tr>
-            <tr>
-              <td>Automation &amp; Scripting</td>
-              <td>PowerShell, Bash, Power Automate, Terraform</td>
+              <td>Operating Systems</td>
+              <td>Windows Server (2008 R2 – 2022), Linux (Oracle, SUSE, Ubuntu), macOS</td>
             </tr>
             <tr>
               <td>Directory Services</td>
-              <td>Active Directory, Azure AD (Entra ID), LDAP, Group Policy (GPO)</td>
+              <td>Active Directory, Entra ID (Azure AD), Group Policy (GPO), LDAP, RBAC</td>
+            </tr>
+            <tr>
+              <td>Automation &amp; Scripting</td>
+              <td>PowerShell, Bash, Power Automate, Terraform, Azure Runbooks</td>
+            </tr>
+            <tr>
+              <td>Programming</td>
+              <td>Java (Spring Boot), C, C++ (Qt 3/4/5), Flutter &amp; Dart, JavaScript, HTML5, CSS3, PHP</td>
+            </tr>
+            <tr>
+              <td>Databases</td>
+              <td>Oracle, MySQL, SQL, PL/SQL</td>
             </tr>
             <tr>
               <td>Backup &amp; Recovery</td>
               <td>Veeam</td>
+            </tr>
+            <tr>
+              <td>Collaboration &amp; ITSM</td>
+              <td>Jira, Microsoft Teams, Slack, eDiscovery, PagerDuty</td>
             </tr>
           </tbody>
         </table>
@@ -188,12 +344,12 @@
     <section class="section section--contact" id="contact">
       <h2 class="section__title">Get in touch</h2>
       <p class="section__content">Open to new opportunities and conversations.</p>
-      <a href="mailto:your.email@example.com" class="btn">Send an email</a>
+      <a href="https://www.linkedin.com/in/benjaminsuljic/" target="_blank" rel="noopener noreferrer" class="btn">Connect on LinkedIn</a>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>© <span id="year"></span> Benjamin Suljic</p>
+    <p>&copy; <span id="year"></span> Benjamin Suljic</p>
   </footer>
 
   <script src="js/main.js"></script>

@@ -96,16 +96,23 @@ main {
 }
 
 .hero__name {
-  margin: 0 0 var(--space-sm);
+  margin: 0 0 var(--space-xs);
   font-size: clamp(2rem, 5vw, 2.75rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   color: var(--color-text);
 }
 
+.hero__role {
+  margin: 0 0 var(--space-xs);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--color-accent);
+}
+
 .hero__tagline {
   margin: 0 0 var(--space-lg);
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: var(--color-text-muted);
 }
 
@@ -156,6 +163,10 @@ main {
   font-size: 1.05rem;
 }
 
+.about__text--secondary {
+  margin-top: var(--space-md);
+}
+
 /* --- Timeline (experience & education) --- */
 .timeline {
   display: flex;
@@ -200,6 +211,70 @@ main {
   font-size: 0.95rem;
   color: var(--color-text-muted);
   line-height: 1.65;
+}
+
+.timeline__description--mt {
+  margin-top: var(--space-md);
+}
+
+.timeline__bullets {
+  margin: var(--space-sm) 0 0;
+  padding-left: var(--space-xl);
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.65;
+}
+
+.timeline__bullets li {
+  margin-bottom: var(--space-xs);
+}
+
+.timeline__bullets li:last-child {
+  margin-bottom: 0;
+}
+
+.timeline__tech {
+  margin: var(--space-md) 0 0;
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--color-accent);
+  opacity: 0.75;
+}
+
+/* --- Certifications grid --- */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-md);
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+.cert-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.cert-issuer {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.cert-date {
+  font-size: 0.8rem;
+  font-family: var(--font-mono);
+  color: var(--color-accent);
+  opacity: 0.8;
 }
 
 /* --- Skills table --- */
@@ -327,5 +402,9 @@ main {
 
   .skills-table tbody td:first-child {
     white-space: normal;
+  }
+
+  .cert-grid {
+    grid-template-columns: 1fr;
   }
 }
